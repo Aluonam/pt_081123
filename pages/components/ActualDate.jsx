@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const ActualDate = () => {
+
+    const fullDate = new Date();
+    const date = fullDate.toLocaleDateString()
+    
+    
   return (
-    <div>ActualDate</div>
+    <div>{date}</div>
   )
 }
 
